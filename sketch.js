@@ -112,3 +112,13 @@ function mouseClicked() {
         play = true;
     }
 }
+
+// fungsi untuk membaca keyboard (enter) ketika game over untuk kembali ke main menu
+function keyPressed(){
+    if(gameover){
+        if (keyCode === ENTER) {
+            gameover = false;
+            play = false;
+        }
+    }
+}
